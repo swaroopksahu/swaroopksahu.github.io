@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroop Sahu — Senior Full Stack Engineer</title>
+    <meta name="description" content="Senior Full Stack Engineer — 8+ years building high-throughput distributed systems at SAP, Cisco, Nokia. 40% memory reduction, 3x performance gains. Java, Spring Boot, Microservices, AI/GenAI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles" class="particles-canvas"></canvas>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">S<span>S</span></a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="SwaroopSahu-Resume.pdf" download class="nav-download magnetic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Resume</span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-icon icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="theme-icon icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+            <a href="SwaroopSahu-Resume.pdf" download class="mobile-download">Download Resume</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-mesh"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-intro-row">
+                    <div class="hero-avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-container">
+                            <img src="profile.jpg" alt="Swaroop Sahu" width="140" height="140">
+                        </div>
+                    </div>
+                    <div class="hero-label">
+                        <span class="label-dot"></span>
+                        SENIOR FULL STACK ENGINEER
+                    </div>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">Swaroop</span>
+                    <span class="name-line"><span class="accent">Sahu</span></span>
+                </h1>
+                <p class="hero-tagline">I architect systems that handle millions of requests.<br>I optimize what others think is fast enough.<br>I ship what others say is impossible.</p>
+                <div class="hero-cta-row">
+                    <a href="#experience" class="btn-primary magnetic">
+                        <span>View My Work</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </a>
+                    <a href="#contact" class="btn-ghost magnetic">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-stats-float">
+                    <div class="stat-badge glass">
+                        <span class="stat-val">8+</span>
+                        <span class="stat-desc">Years</span>
+                    </div>
+                    <div class="stat-badge glass">
+                        <span class="stat-val">3x</span>
+                        <span class="stat-desc">Performance</span>
+                    </div>
+                    <div class="stat-badge glass">
+                        <span class="stat-val">40%</span>
+                        <span class="stat-desc">Memory Saved</span>
+                    </div>
+                </div>
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width:380px;height:380px" loop autoplay></lottie-player>
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-hook">I don't just write code — I engineer systems that <span class="accent">scale, perform, and endure</span>.</p>
+                    <p>With 8+ years across SAP, Cisco, and Nokia, I've designed high-throughput APIs processing millions of requests, achieved 3x system performance through JVM and query optimization, orchestrated event-driven architectures with Kafka, and led engineering teams to deliver mission-critical distributed systems on time.</p>
+                </div>
+                <div class="specialty-grid">
+                    <div class="specialty-card glass">
+                        <div class="spec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>System Architecture</h3>
+                        <p>Microservices, event-driven, distributed at scale</p>
+                    </div>
+                    <div class="specialty-card glass">
+                        <div class="spec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>Performance Engineering</h3>
+                        <p>JVM tuning, query optimization, 3x throughput gains</p>
+                    </div>
+                    <div class="specialty-card glass">
+                        <div class="spec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Technical Leadership</h3>
+                        <p>Architecture reviews, mentoring, cross-team delivery</p>
+                    </div>
+                    <div class="specialty-card glass">
+                        <div class="spec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        </div>
+                        <h3>AI & GenAI</h3>
+                        <p>Claude Code, Copilot, agentic AI, MCP, prompt engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-entry" data-year="2022">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-card glass">
+                        <div class="tc-header">
+                            <div class="tc-company">
+                                <h3>SAP</h3>
+                                <span class="tc-role">Software Developer (Specialist)</span>
+                            </div>
+                            <div class="tc-meta">
+                                <span class="tc-badge current">Current</span>
+                                <span class="tc-duration">Jul 2022 – Present</span>
+                            </div>
+                        </div>
+                        <ul class="tc-achievements">
+                            <li>Architected binary content transport framework — <strong class="metric">40% memory reduction</strong></li>
+                            <li>Designed high-throughput REST APIs with idempotency, rate limiting, OAuth2/JWT</li>
+                            <li>Event-driven workflows + parallel orchestration — <strong class="metric">30% faster execution</strong></li>
+                            <li>SAP HANA query optimization — <strong class="metric">3x system performance</strong></li>
+                            <li>Led design reviews, mentored engineers on scalable architecture</li>
+                        </ul>
+                        <div class="tc-stack">
+                            <span>Java</span><span>Spring Boot</span><span>SAP HANA</span><span>Kafka</span><span>REST</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry" data-year="2021">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <div class="tc-header">
+                            <div class="tc-company">
+                                <h3>Cisco Systems</h3>
+                                <span class="tc-role">Software Engineer</span>
+                            </div>
+                            <div class="tc-meta">
+                                <span class="tc-duration">Mar 2021 – Jun 2022</span>
+                            </div>
+                        </div>
+                        <ul class="tc-achievements">
+                            <li>Built scalable microservices for <strong>Webex Contact Center</strong> — enterprise-scale event streaming with Kafka</li>
+                            <li>Implemented OAuth2/JWT auth layer + optimized async APIs for <strong class="metric">99.9% uptime SLA</strong></li>
+                            <li>Owned CI/CD pipelines, observability dashboards, and on-call incident resolution</li>
+                        </ul>
+                        <div class="tc-stack">
+                            <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>OAuth2</span><span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry" data-year="2018">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <div class="tc-header">
+                            <div class="tc-company">
+                                <h3>Nokia</h3>
+                                <span class="tc-role">Senior Engineer (R&D)</span>
+                            </div>
+                            <div class="tc-meta">
+                                <span class="tc-duration">Oct 2018 – Mar 2021</span>
+                            </div>
+                        </div>
+                        <ul class="tc-achievements">
+                            <li>Enhanced distributed core components — <strong class="metric">improved throughput, reduced latency</strong></li>
+                            <li>Multithreaded modules with Java concurrency — <strong class="metric">3x system capacity</strong></li>
+                            <li>Designed NE simulators, optimized NTP sync mechanisms</li>
+                        </ul>
+                        <div class="tc-stack">
+                            <span>Java</span><span>Concurrency</span><span>Distributed Systems</span><span>R&D</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry" data-year="2017">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <div class="tc-header">
+                            <div class="tc-company">
+                                <h3>Infinite Computer Solutions</h3>
+                                <span class="tc-role">Associate Software Engineer</span>
+                            </div>
+                            <div class="tc-meta">
+                                <span class="tc-duration">Oct 2017 – Sep 2018</span>
+                            </div>
+                        </div>
+                        <ul class="tc-achievements">
+                            <li>Built async JobManager with multithreading & thread pools — <strong class="metric">bulk query optimization at scale</strong></li>
+                            <li>Developed RESTful services for telecom provisioning workflows</li>
+                        </ul>
+                        <div class="tc-stack">
+                            <span>Java</span><span>Multithreading</span><span>Thread Pools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Arsenal</h2>
+            </div>
+            <div class="skills-showcase">
+                <div class="skill-group">
+                    <h3 class="sg-title">Core</h3>
+                    <div class="skill-pills">
+                        <span class="pill pill-primary">Java</span>
+                        <span class="pill pill-primary">Spring Boot</span>
+                        <span class="pill pill-primary">Microservices</span>
+                        <span class="pill pill-primary">REST APIs</span>
+                        <span class="pill pill-primary">Kafka</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="sg-title">Frontend</h3>
+                    <div class="skill-pills">
+                        <span class="pill">React.js</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">HTML5/CSS3</span>
+                        <span class="pill">Hooks</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="sg-title">Cloud & DevOps</h3>
+                    <div class="skill-pills">
+                        <span class="pill">AWS (EC2, S3, IAM)</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Kubernetes</span>
+                        <span class="pill">CI/CD</span>
+                        <span class="pill">Git</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="sg-title">Data & Security</h3>
+                    <div class="skill-pills">
+                        <span class="pill">SAP HANA</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">Query Optimization</span>
+                        <span class="pill">OAuth2/JWT</span>
+                        <span class="pill">Rate Limiting</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="sg-title">AI & GenAI</h3>
+                    <div class="skill-pills">
+                        <span class="pill pill-accent">Claude Code</span>
+                        <span class="pill pill-accent">GitHub Copilot</span>
+                        <span class="pill pill-accent">Prompt Engineering</span>
+                        <span class="pill pill-accent">Agentic AI</span>
+                        <span class="pill pill-accent">MCP</span>
+                        <span class="pill pill-accent">LLM Orchestration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics -->
+    <section class="section section-impact" id="impact">
+        <div class="impact-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Impact</h2>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-glow"></div>
+                    <span class="metric-number" data-target="40">0</span><span class="metric-suffix">%</span>
+                    <p>Memory Footprint Reduced</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-glow"></div>
+                    <span class="metric-number" data-target="3">0</span><span class="metric-suffix">x</span>
+                    <p>System Performance Gains</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-glow"></div>
+                    <span class="metric-number" data-target="30">0</span><span class="metric-suffix">%</span>
+                    <p>Faster Execution Time</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-glow"></div>
+                    <span class="metric-number" data-target="8">0</span><span class="metric-suffix">+</span>
+                    <p>Years of Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certs -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Credentials</h2>
+            </div>
+            <div class="cred-grid">
+                <div class="cred-column">
+                    <h3 class="cred-heading">Education</h3>
+                    <div class="cred-card glass">
+                        <div class="cred-icon">🎓</div>
+                        <div>
+                            <h4>Master of Computer Applications</h4>
+                            <p>Berhampur University, Odisha</p>
+                            <span class="cred-year">2014 – 2017</span>
+                        </div>
+                    </div>
+                    <div class="cred-card glass">
+                        <div class="cred-icon">🎓</div>
+                        <div>
+                            <h4>B.Sc. Physics (Honours)</h4>
+                            <p>Sambalpur University, Odisha</p>
+                            <span class="cred-year">2011 – 2014</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cred-column">
+                    <h3 class="cred-heading">Certifications</h3>
+                    <div class="cred-card glass">
+                        <div class="cred-badge">SAP</div>
+                        <div>
+                            <h4>SAP Certified – Project Manager</h4>
+                            <span class="cred-year">2026</span>
+                        </div>
+                    </div>
+                    <div class="cred-card glass">
+                        <div class="cred-badge">SAP</div>
+                        <div>
+                            <h4>AI Developer Foundation Program</h4>
+                            <span class="cred-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="cred-card glass">
+                        <div class="cred-badge">UM</div>
+                        <div>
+                            <h4>Applied Data Science with Python</h4>
+                            <p>University of Michigan</p>
+                            <span class="cred-year">2022</span>
+                        </div>
+                    </div>
+                    <div class="cred-card glass award-card">
+                        <div class="cred-badge award">★</div>
+                        <div>
+                            <h4>Multiple Monetary Awards</h4>
+                            <p>Ownership, cross-team collaboration, high-impact delivery</p>
+                            <span class="cred-year">SAP, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-heading">Let's Build<br><span class="accent">Something Great</span></h2>
+                <p class="contact-sub">Open to senior/lead roles, architecture consulting, and high-impact engineering opportunities.</p>
+                <div class="contact-links">
+                    <a href="mailto:swaroopksahu@gmail.com" class="contact-item glass magnetic">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>swaroopksahu@gmail.com</span>
+                    </a>
+                    <a href="tel:+917381644909" class="contact-item glass magnetic">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+91 738 164 4909</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/swaroopksahu" target="_blank" class="contact-item glass magnetic">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/swaroopksahu" target="_blank" class="contact-item glass magnetic">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by Swaroop Sahu</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
